@@ -4,8 +4,7 @@ const Element = require("../base_elements/base_elements");
 class ProductSelectorPage extends BasePage {
   constructor() {
     super();
-    this.url =
-      "https://www.apc.com/us/en/support/resources-tools/product-selectors.jsp";
+    this.url = "https://www.apc.com/shop/us/en/tools/ups_selector/";
     this.UPSSelector = new Element(
       "xpath",
       "//a[@href='https://www.apc.com/shop/us/en/tools/ups_selector/']"
@@ -25,6 +24,10 @@ class ProductSelectorPage extends BasePage {
     this.TotalPowerLabel = new Element(
       "xpath",
       "//span[@class='TotalPowerDraw_values__lPanF']"
+    );
+    this.SelectorTotalPower = new Element(
+      "xpath",
+      "//div[@class='col-md-6']//div[@role='slider']"
     );
   }
   open() {

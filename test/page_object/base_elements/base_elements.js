@@ -5,6 +5,7 @@ class Element {
     } else {
       this.element = element(by.xpath(selector));
     }
+    return this.element;
   }
   click() {
     return this.element.click();

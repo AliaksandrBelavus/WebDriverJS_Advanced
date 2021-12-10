@@ -3,9 +3,9 @@ exports.config = {
 
   directConnect: true,
 
-  capabilities: {
-    browserName: "chrome",
-  },
+  Capabilities: [{
+    'browserName': 'chrome'
+  }],
 
   framework: "jasmine",
 
