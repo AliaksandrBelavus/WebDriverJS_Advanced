@@ -4,11 +4,8 @@ class BasePage {
   constructor() {
     this.Header = new Header();
   }
-  wait(waitInMilliseconds) {
-    return browser.sleep(waitInMilliseconds);
-  }
-  open(url) {
-    return browser.get(url);
+  open() {
+    browser.get(this.url);
   }
 }
 
